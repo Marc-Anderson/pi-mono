@@ -772,6 +772,7 @@ function detectCompat(model: Model<"openai-completions">): Required<OpenAIComple
 		baseUrl.includes("chutes.ai") ||
 		baseUrl.includes("deepseek.com") ||
 		isZai ||
+        provider === "ollama" ||
 		provider === "opencode" ||
 		baseUrl.includes("opencode.ai");
 
